@@ -31,7 +31,6 @@ public enum DataHandler {
     }
 
     public ObservableList<Book> booksAsObservableList() {
-        ObservableList<Book> ol = FXCollections.observableList(getBooks());
-        return ol;
+        return FXCollections.observableList(getBooks());
     }
 }
